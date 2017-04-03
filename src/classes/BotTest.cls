@@ -140,5 +140,11 @@ public class BotTest {
         BotResponse response = handler.handle('select id from account', null, null);
         System.assert(response.messages[0].records.size() == 1);
     }
+    static testMethod void testDesc() {
 
+        handlerDesc handler = new handlerDesc();
+        BotResponse response1 = handler.handle('', new String[]{'Account', 'Name'}, null);
+        BotResponse response2 = handler.handle('', new String[]{'Account', 'Type'}, null);
+        BotResponse response3 = handler.handle('', new String[]{'Account', 'AnnualRevenue'}, null);
+    }
 }

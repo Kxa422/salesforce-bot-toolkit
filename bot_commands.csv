@@ -14,3 +14,4 @@ Quarter,(?i).*quarter.*,HandlerQuarter,My Quarter,true
 SOQL,(?i)select.*,HandlerSOQL,SELECT Name FROM Contact LIMIT 5,true
 Top Opportunities,(?i).*top (\d+) opportunities,HandlerTopOpportunities,Top 3 opportunities,true
 Travel Approval,(?i)travel approval,HandlerTravelApproval,Travel Approval,true
+Desc object,(?i)desc ([A-Za-z0-9_]*)|(?i)desc \"([^\"]*)\",handlerDesc,Desc account, desc \"bot command\",true
